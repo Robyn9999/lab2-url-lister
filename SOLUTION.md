@@ -41,3 +41,6 @@ gcloud dataproc clusters create test-dataproc \
     --public-ip-address
 ```
 <img width="1766" height="680" alt="image" src="https://github.com/user-attachments/assets/4e96009e-237b-42e7-829c-39bbaeaaaeb6" />
+With 4 workers the execution time basically doubles.
+
+
