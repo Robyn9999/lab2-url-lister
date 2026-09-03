@@ -1,3 +1,17 @@
+My solution for the coding problem uses a regex pattern: 
+```
+private static final Pattern HREF_PATTERN =
+        Pattern.compile("href=\"([^\"]*)\"", Pattern.CASE_INSENSITIVE);
+```
+
+This pattern works by matching on href=" anything here until a "
+
+and then to remove the href part from my results I use:
+
+```
+        href.set(matcher.group(1));
+```
+
 2 workers 
 made using 
 ```
@@ -26,3 +40,4 @@ gcloud dataproc clusters create test-dataproc \
     --num-workers=4 \
     --public-ip-address
 ```
+<img width="1766" height="680" alt="image" src="https://github.com/user-attachments/assets/4e96009e-237b-42e7-829c-39bbaeaaaeb6" />
